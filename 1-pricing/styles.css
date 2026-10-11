@@ -64,7 +64,7 @@ body {
 .price {
   font-size: 40px;
   font-weight: 700;
-  color: #f8fafc;
+  color: #0f172a;
   margin-bottom: 20px;
 }
 
@@ -94,9 +94,9 @@ body {
 
 .btn {
   display: inline-block;
+  background-color: #2563eb;
   padding: 12px 28px;
   border-radius: 8px;
-  background: #cbd5e1;
   color: #ffffff;
   text-decoration: none;
   font-weight: 600;
