@@ -32,6 +32,8 @@ function toggleTask(id) {
   const task = tasks.find((t) => t.id === id);
   if (task) {
     task.done = !task.done
+    console.log(task)
+    // document.querySelector(`#${task.id}`).classList.toggle('done');
   }
   render();
 }
@@ -69,7 +71,7 @@ function render() {
     const li = document.createElement("li");
     li.className = "task";
     if (task.done) {
-      li.classList.add("completed");
+      li.classList.add("done", "completed");
     }
 
     const span = document.createElement("span");
