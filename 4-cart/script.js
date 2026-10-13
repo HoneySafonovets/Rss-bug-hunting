@@ -73,8 +73,10 @@ function removeItem(id) {
 }
 
 function applyPromo() {
-  if ((promoInput.value = "SALE10")) {
+  if (promoInput.value.trim().toUpperCase() === "SALE10") {
     discount = 0.1;
+  } else {
+    discount = 0;
   }
   renderCart();
 }
@@ -86,7 +88,7 @@ function clearCart() {
 
 function renderCart() {
   cartItemsEl.innerHTML = "";
-  let total = "";
+  let total = 0;
   cart.forEach((item) => {
     const lineTotal = item.price;
     const li = document.createElement("li");
